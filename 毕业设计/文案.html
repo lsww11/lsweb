@@ -1,0 +1,1024 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>忘忧君馆</title>
+<link rel="icon" href="img/logo图标.png" sizes="64x64">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+</head>
+<!-- 头部样式 -->
+<style>
+
+#main{
+	width:100%;
+	overflow:hidden;
+    box-shadow: 0px 1px 15px #c5c2c2;
+  
+    
+}
+
+#main .main-left{
+	width:25%;
+	height:100px;
+	background:lightgreen;
+	float:left;
+   
+}
+#main .main-center{
+	width:50%;
+	height:100px;
+	background:lightgreen;
+	float:left;
+}
+
+#main .main-right{
+	width:25%;
+	height:100px;
+	background:lightgreen;
+	float:right;
+    cursor: pointer;
+  
+   
+}
+#footer{
+	height:35px;
+	background:lightgreen;
+    /* font-size: 1.6vw; */
+}
+    .main-center{
+        width:400px ;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/4.GIF);
+         background-color:lightgreen;
+         margin: 0 auto;
+    }
+    .title{
+        position: relative;
+        font-size: 2rem;
+        color:rgb(42,166,226);
+        /* text-shadow: 2px -3px 5px 1px #000 inherit; 文字阴影 */
+        /* box-shadow: 0px -3px 5px 1px #72bae1 inset;  盒子阴影：水平阴影 垂直阴影 模糊距离 阴影尺度 阴影颜色 inset(外部阴影)--outset(内部阴影) */
+    }
+    .title::after{
+        content: "忘忧君馆";
+        color:transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip-path: circle(25px at 50% 50%);
+        animation: move 5s infinite;
+        background-image: url('img/标题颜色.gif');
+         background-color: text;
+        -webkit-background-clip: text;
+    }
+    @keyframes move {
+        0%{
+            clip-path: circle(25px at 0 50%);
+        }
+        50%{
+            clip-path: circle(25px at 100% 50%)
+        }
+        100%{
+            clip-path: circle(25px at 0 50%)
+        }
+    }
+    .logo img{
+        width:60px;
+        height:60px;
+    }
+
+   
+   body{
+        margin: 0;
+        background-color: rgb(237, 236, 236);
+        font-size: 1.2vw;
+
+    }
+    .m{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;}
+    .btn{
+            float: left;
+            width: 12.5%;
+            height: 35px;
+            color: #000;
+            background-color: #ade0c7;
+            text-align: center;/*文本水平对齐水平：居中 */
+            line-height: 35px;/*行高：元素高度 */
+            cursor: pointer;/*光标：指向者*/
+            /* box-shadow: 0px -4px 2px 0px #cae0d5 inset; */
+        }
+        .btn li:hover{
+            color: #fff;
+            background-color: #3390ff;
+        }
+        a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;/*光标：指向者*/
+   }
+   .pen{top: 5px;
+	   margin: 10px 0;
+	   }
+	   .wenan{
+        
+		   width:100%;
+		   height:25%;
+		   background-color:lightgreen;
+		   text-height:10px;
+		   float:left;
+		   font-size:17px;
+		   font:bold 17px 'arial' ,'sans-serif' , 楷体;
+		   padding-left:2em;
+           border-left: 1px dashed rgb(0, 0, 0);
+		   }
+		  .wenan1{
+            margin:0 auto;
+			width:100%;
+		   	height:75%;
+		   	background-color:lightgreen;
+		  	float:left;
+			font:italic bold 7px 'arial' , 宋体;
+			padding-left:2em;
+            border-left: 1px dashed rgb(0, 0, 0);
+			  }
+			  .yanse{
+				  background-color: #3390ff;
+                  color: #fff;
+              } 
+ 
+    .guan{top: 5px;
+	   margin: 10px 5px;
+	   }
+	   .wen{
+        
+		   width:100%;
+		   height:25%;
+		   background-color:lightgreen;
+		   text-height:10px;
+		   float:right;
+		   font-size:17px;
+		   font:bold 17px 'arial' ,'sans-serif' , 楷体;
+		   padding-left:2em;
+           border-right: 1px dashed rgb(0, 0, 0);
+  
+		   }
+		  .wen1{
+            
+			width:100%;
+		   	height:75%;
+		   	background-color:lightgreen;
+		   	
+		  	float:right;
+		   
+			font:italic bold 6px 'arial' , 宋体;
+	
+            border-right: 1px dashed rgb(0, 0, 0);
+         
+            text-indent:15px; /*文本缩进  缩进*/
+			  }
+              .wen1_ge{
+                margin: 7px 0px;
+                margin-left: -11px;
+                font: bold 13px 'arial' ,'sans-serif' ,楷体;
+              }
+              .user{
+                color: rgb(3, 147, 231);
+                text-decoration: rgb(1, 141, 255) underline; /*下划线*/
+                margin-left: 2px;
+                font: bold 13px 'arial' ,'sans-serif' ,楷体;
+                text-shadow:0.1em 0.1em rgb(0, 0, 0);
+              }
+
+    /* 位置 */
+    .position{
+    height: 27px;
+    background: rgb(255, 255, 255);
+    margin: 18px 23px;
+    box-shadow: 0px 1px 15px  #a2a2a2;
+    font-size: 7px;
+   }
+   .position_left{
+       float: left;
+    width: 200px;
+    text-indent:15px;
+    margin: 5px 4px;
+   }
+   .narrow::before{
+    content: "->";
+    width:115px;
+    height: 220px;
+    background-size: 200px;
+   }
+   .position_left a:hover{
+            color:#3390ff;
+   }		  
+</style>
+
+
+<body>
+<!-- 主标 -->
+<div id="main">
+<!-- 左 -->
+	<div class="main-left">
+        <div class="wen">
+            <h5 class="guan">馆主：<a class="user" href="馆主.html">lsww11</a></h5>
+        </div>
+            <div class="wen1">
+            <h6 class="wen1_ge">个性签名:</h6>
+            <p>远赴人间惊鸿宴，一睹人间盛世颜。</p>
+           </div>
+    </div>
+<!-- 大标题 -->
+    <div class="main-center">
+        <div class="logo"><img src="img/logo图标.png" alt="logo图标"></div>
+            <h5 class="title">忘忧君馆</h5>
+    </div>
+<!-- 右 -->
+	<div class="main-right">
+        <div class="wenan"><a href="文案.html">
+            <h5 class="pen">随 笔：</h5>
+        </div>
+            <div class="wenan1">
+            <p>没有一个冬天不可逾越，没有一个春天不会来临。</p>
+            <p>最慢的步伐不是跬步，而是徘徊，</p>
+            <p>最快的脚步不是冲刺，而是坚持。</p>
+           </div></a>
+    </div>
+<!-- 导航 -->
+    <div id="footer">
+        <ul class="m">
+            <div class="btn"><a href="首页.html"><li class="yanse">首 页</li></a></div>
+            <div class="btn"><a href="时光.html"><li>时 光</li></a></div>
+            <div class="btn"><a href="博客.html"><li>博 客</li></a></div>
+            <div class="btn"><a href="文案.html"><li>文 案</li></a></div>
+            <div class="btn"><a href="图库.html"><li>图 库</li></a></div>
+            <div class="btn"><a href="视频.html"><li>视 频</li></a></div>
+            <div class="btn"><a href="风景.html"><li>风 景</li></a></div>          
+            <div class="btn"><a href="特效.html"><li>特 效</li></a></div>
+        </ul>
+    </div>
+ </div>
+<!--位置-->
+<div class="position">
+    <div class="position_left">当前位置<i class="narrow"><a class="narrw_g" href="首页.html">首页</a></i></div>
+</div> 
+ </body>   
+<!-- 主标结束 -->
+
+
+
+
+
+
+
+
+
+
+<!-- 主内容样式 -->
+<style>
+    /* img {
+  max-width: 100%;
+  display: block;
+} */
+
+
+.ip{
+        font: 1.2em Helvetica, Arial, sans-serif;
+        margin: 10px;
+        padding: 0;
+        background-color:rgb(237, 236, 236);
+        /* font-size: 1.2rem; */
+        font-size: 1.2vw;
+      }
+      .in_content {
+        max-width: 1103.64px;
+        /* height: 1580px; */
+        height: auto;
+        margin: 4px auto;
+        overflow: hidden;
+        background: #c72020;
+      }
+
+      .content_left,
+      .content_right {
+        background-color: rgb(98, 98, 98);
+      }
+
+      @media screen and (min-width: 900px) {
+        .in_content {
+          display: flex;
+          background: rgb(237, 236, 236);
+        }
+
+        .content_left {
+          flex: 10;
+          margin-right: 2%;
+        }
+
+        .content_right {
+          flex: 4;
+          margin-bottom: 15px;
+        }
+        .nr_bt{
+            margin: 0;
+        }
+        
+      }
+      @media(max-width: 895px) {
+       .nr_znr{ 
+        display:none;
+    }
+    .wenan,
+    .wenan1{
+        display: none;
+    }
+    .wen1,
+    .wen{
+        display: none;
+    }
+    .main-center{
+        max-width: 900px;
+        width: 900px;
+    }
+   
+    .nr_bt{
+        margin-top: 0;
+        margin-bottom: 16%;
+    }
+    .content_right,
+    .sj_zz{
+        display: none;
+    }
+    .nr{
+        font-size: 1.2vw;
+    }
+  
+}
+/* @media (min-width: 601px) {
+最大化显示
+} */
+      
+   .container_item{
+        width: 100%;
+        height: 100%;/*自适应高度*/
+        background-color: rgb(255, 255, 255);/*背景颜色*/
+        margin: 0 auto;/*外边距：0-->上下元素边框对外的距离 */
+    }
+  
+    .item_nr{
+        max-width: 100%;
+        width: 100%;
+        border-bottom:15px solid rgb(237, 236, 236);/*边框-下边框：粗细 样式 颜色*/
+        
+    }
+    .item_nr>img{
+        max-width: 100%;
+        height: 90%;
+    }
+    .nr{
+        width:94.5%;
+        height: 89%;
+        background: #ffffff;
+        display: flex;  /* 元素从左并排 */
+         margin: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+   
+    .nr_i{
+        max-width: 100%;
+        width: 28%;
+        height: auto;
+        background: rgb(255, 255, 255); 
+
+     }
+     .nr>.nr_i>img{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        display: block;
+     }
+     .nr_right{
+        width: 72%;
+        height: 100%;
+        background: #ffffff;
+        margin-left: 20px;
+        /* position: relative; */
+        /* float: left; */
+         /* display: flex;  元素从左并排 */
+     }
+.nr_bt{
+    width: 100%;
+    height: 25px;
+    background: rgb(255, 255, 255);
+    float: left;
+    /* font-size: 18px; */
+ 
+}
+.nr_znr{
+    
+    width: 100%;
+    height: 85px;
+    background: rgb(255, 255, 255);
+    float: left;
+    font: bold 13px 'arial' , 宋体;
+    margin: 0;
+    line-height: 180%;
+    /* color: #6e6868; */
+    color: #777;
+}
+
+.nr_sj{
+    max-width: 100%;
+    width: 100%;
+    height:auto;
+    background: #ffffff;
+    float: right;
+    font: bold 12px 'arial' , 宋体;
+    color: #6e6868;
+    margin: 0;
+    /* display: flex; */
+   
+}
+.sj_zz{
+    width: 25px;
+    background: #ffffff;
+    float: left;
+
+}
+.sj_yuan1{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius:50%;
+    position: relative;
+    border: 1px solid rgb(0 0 0);
+    /* margin-top: -39px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.sj_yuan2{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border-radius:50%;
+    margin: 1px; 
+    
+}
+.sj_yuan2 img{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.gxsj1{
+    float: left;
+    display: flex;
+    width: 116x;
+    background:rgb(255, 255, 255);
+    margin:0;
+    /* justify-content: center; */
+    align-items: center;
+}
+.gxsj2{
+    float: left;
+    width: 25px;
+    background:rgb(255, 255, 255);
+}
+.gxsj2::before {
+    content: "";
+    display: inline-block; 
+    width: 25px;
+    height: 25px;
+    background: url("img/时间图标.png") no-repeat center center;
+    background-size: 25px;
+    border-radius:50%;
+}
+.gxsj3{
+    float: left;
+    display: flex;
+    width: 48px;
+    background:rgb(255, 255, 255);
+    margin-left: 5px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.gxsj3:hover{
+    color: #3390ff;
+}
+.gxsj4{
+    float: left;
+    width: 21px;
+    background:rgb(255, 255, 255);
+    
+}
+.gxsj4::before{
+    content: "";
+    display: inline-block; 
+    width: 22px;
+    height: 22px;
+    background: url("img/菜单图标.png") no-repeat center center;
+    background-size: 22px;
+    border-radius:50%;
+}
+.gxsj5{
+    float: left;
+    display: flex;
+    width: 48px;
+    background:rgb(255, 255, 255);
+    margin-left: 5px;
+    /* justify-content: center; */
+    align-items: center;
+    color: #3390ff;
+}
+.gxsj6{
+    float: left;
+    width: 21px;
+    background:rgb(255, 255, 255);
+    color: #3390ff;
+}
+.gxsj6::before{
+    content: "";
+    display: inline-block; 
+    width: 16px;
+    height: 24px;
+    background: url("img/信息图标.png") no-repeat center center;
+    background-size: 13px;
+    border-radius:50%;
+}
+.gxsj_r{
+    float: right;
+    width: 49px;
+    background: #ffffff;
+}
+.gxsj7{
+    display: flex;
+    float: right;
+    width: 48px;
+    background:rgb(255, 255, 255);
+    margin-left: 5px;
+    /* justify-content: center; */
+    align-items: center;
+    /* color: #3390ff; */
+}
+.gxsj8{
+    float: right;
+    width: 21px;
+    background:rgb(255, 255, 255);
+    color: #3390ff;
+}
+.gxsj8::before{
+    content: "";
+    display: inline-block; 
+    width: 16px;
+    height: 24px;
+    background: url("img/小眼睛图标.jpg") no-repeat center center;
+    background-size: 13px;
+    border-radius:50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .content_right_gz{
+    width: 100%;
+    height:340px;
+    background: #ade0c7;
+    position: relative;
+    border-bottom: 15px solid rgb(237, 236, 236);
+    /* display: flex;   元素从左并排*/
+    
+   }
+
+   .right_gz_tx{
+    width: 100%;
+    height: 170px;
+    background: rgb(16,58,90);
+    position:absolute;
+    
+   }
+   .gz_tx_yuan1{
+    width: 70px;
+    height: 70px;
+    background: #ffffff;
+    border-radius:50%;
+    position: relative;
+    margin-top: -39px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gz_tx_yuan2{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background: #ade0c7;
+    border-radius:50%;
+    margin: 2.5px 2.5px; 
+}
+.gz_tx_yuan2 img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    /* justify-content: center;
+    align-items: center; */
+}
+  .gz_tx_mz h2{
+    width: 100%;
+    background-color: #ade0c7;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    color:#000;
+    left: auto;
+  } 
+  .gz_tx_qj h6{
+    width: 100%;
+    background-color: #ade0c7;
+    margin-top:5px;
+    text-align: center;
+    color:rgb(78, 78, 78);
+    left: auto;
+  }
+  .gz_tx_zj{
+    float:right;
+    width: 100%;
+    height: 113px;
+    background: #ade0c7;
+    margin-top:225px;
+    text-align: center;
+    color:rgb(78, 78, 78);
+    left: auto;
+  }
+
+  .zj_top{
+    height: 40%;
+    background: #ade0c7; 
+    display: flex;  
+    justify-content: center;
+
+    
+  }
+  .zj_top div{
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius:50%;
+    margin: 4px 10px;
+  }
+
+
+
+
+
+
+
+
+
+/* 联系方式图标样式 */
+  .zj_top_xin1,
+  .zj_top_xin2,
+  .zj_top_xin3{ 
+        float: left;
+        display: block;
+        border: 2px solid rgb(255, 255, 255); 
+        overflow: hidden; 
+        display:inline-block;
+    } 
+    /* 设置ul和li的样式 */
+    .zj_top_xin1 ul , .zj_top_xin1 li,
+    .zj_top_xin2 ul , .zj_top_xin2 li,
+    .zj_top_xin3 ul , .zj_top_xin3 li{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+    } 
+    
+    /* 设置二级菜单绝对定位，并隐藏 */
+    .zj_top_xin1  > li > ul,
+    .zj_top_xin2> li > ul,
+    .zj_top_xin3> li > ul {
+        position: absolute;
+        display: none;
+    }
+  
+    /* 鼠标放在一级菜单上，显示二级菜单 */
+    .zj_top_xin1 > li:hover ul,
+    .zj_top_xin2> li:hover ul,
+    .zj_top_xin3> li:hover ul {
+        display: block;
+        
+    }
+
+    /* 一级菜单 */
+    .zj_top_xin1 >li > a,
+    .zj_top_xin2>li > a ,
+    .zj_top_xin3>li > a{
+        background-color: #000;
+        color: #000;
+        display: block;
+        filter:grayscale(1); /*灰色模式*/
+    }
+    .zj_top_xin1 >li > a:hover,
+    .zj_top_xin2>li > a:hover,
+    .zj_top_xin3>li > a:hover{
+        filter:grayscale(0);
+       
+    }
+    /* 二级菜单 */
+    .zj_top_xin1 >li > ul > li > a,
+    .zj_top_xin2>li > ul > li > a,
+    .zj_top_xin3>li > ul > li > a {
+        border-top: none;
+        display: block;
+    }
+    .zj_top_xin1>li>ul>li>a>img,
+    .zj_top_xin2>li>ul>li>a>img,
+    .zj_top_xin3>li>ul>li>a>img{
+        width: 150px;
+        height: 150px;
+        background: #20c792;
+        margin-top: -210px;
+    }
+    
+    .zj_top_xin2>li>ul>li>a>img{
+        margin-left: -58px;
+    }
+    .zj_top_xin3>li>ul>li>a>img{
+
+        margin-left: -116px;
+    }
+ 
+    .zj_bottom{
+    width: 100%;
+    height: 60%;
+    background: turquoise;
+    display: flex;
+  }
+.zj_bottom_zj{
+    width: 33.33%;
+    height: 100%;
+    background: #ade0c7;
+    font-size: 15px;
+}
+.z_j{
+    margin:6px auto;
+    font-size: 16px;
+}
+</style>
+
+<!-- 主内容                -->
+<body>
+
+   <!-- 内容 -->
+<div class="ip">
+    <div class="in_content" >
+        
+        <div class="content_left">
+            <div class="container_item">
+                <div class="item_nr" style="height: 200px;"><a><img src="img/1.png" height="100%" width="100%" alt="图片"></a></div>
+                <div class="item_nr"><!--时 光 区-->
+                    <div class="nr">
+                    <div class="nr_i"><img src="img/1.jpg" alt="图片"></div>
+                        <div class="nr_right">
+                            <h4 class="nr_bt">——个人网站开发——</h4>
+                            <h6 class="nr_znr">随着全球信息网络的发展，网站早已由论证阶段进入了实质阶段,尤其为企业提供一个展示自己的舞台、为消费者创造一个了解企业的捷径。</h6>
+                            <span class="nr_sj">
+                                <a href="馆主.html"><span class="sj_zz">
+                                    <div class="sj_yuan1">
+                                        <div class="sj_yuan2">
+                                    <img src="img/guanzhu.png" alt="馆主" >
+                                    </div></div>
+                                </span></a>
+                                <span class="gxsj1"><span class="gxsj2"></span>2022年9月22日</span>
+                                <a href="时光.html"><span class="gxsj3"><span class="gxsj4"></span>时光</span></a>
+                                <span class="gxsj5"><span class="gxsj6"></span>3</span>
+                                <div class="gxsj_r"><span class="gxsj7"><span class="gxsj8"></span>9</span></div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_nr"><!--时 光 区-->
+                    <div class="nr">
+                    <div class="nr_i"><img src="img/1.jpg" alt="图片"></div>
+                        <div class="nr_right">
+                            <h4 class="nr_bt">——个人网站开发——</h4>
+                            <h6 class="nr_znr">随着全球信息网络的发展，网站早已由论证阶段进入了实质阶段,尤其为企业提供一个展示自己的舞台、为消费者创造一个了解企业的捷径。</h6>
+                            <span class="nr_sj">
+                                <a href="馆主.html"><span class="sj_zz">
+                                    <div class="sj_yuan1">
+                                        <div class="sj_yuan2">
+                                    <img src="img/guanzhu.png" alt="馆主" >
+                                    </div></div>
+                                </span></a>
+                                <span class="gxsj1"><span class="gxsj2"></span>2022年9月24日</span>
+                                <a href="博客.html"><span class="gxsj3"><span class="gxsj4"></span>博客</span></a>
+                                <span class="gxsj5"><span class="gxsj6"></span>1</span>
+                                <div class="gxsj_r"><span class="gxsj7"><span class="gxsj8"></span>11</span></div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_nr"><!--时 光 区-->
+                    <div class="nr">
+                    <div class="nr_i"><img src="img/1.jpg" alt="图片"></div>
+                        <div class="nr_right">
+                            <h4 class="nr_bt">——个人网站开发——</h4>
+                            <h6 class="nr_znr">随着全球信息网络的发展，网站早已由论证阶段进入了实质阶段,尤其为企业提供一个展示自己的舞台、为消费者创造一个了解企业的捷径。</h6>
+                            <span class="nr_sj">
+                                <a href="馆主.html"><span class="sj_zz">
+                                    <div class="sj_yuan1">
+                                        <div class="sj_yuan2">
+                                    <img src="img/guanzhu.png" alt="馆主" >
+                                    </div></div>
+                                </span></a>
+                                <span class="gxsj1"><span class="gxsj2"></span>2022年9月25日</span>
+                                <a href="文案.html"><span class="gxsj3"><span class="gxsj4"></span>文案</span></a>
+                                <span class="gxsj5"><span class="gxsj6"></span>3</span>
+                                <div class="gxsj_r"><span class="gxsj7"><span class="gxsj8"></span>10</span></div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_nr"><!--时 光 区-->
+                    <div class="nr">
+                    <div class="nr_i"><img src="img/1.jpg" alt="图片"></div>
+                        <div class="nr_right">
+                            <h4 class="nr_bt">——个人网站开发——</h4>
+                            <h6 class="nr_znr">随着全球信息网络的发展，网站早已由论证阶段进入了实质阶段,尤其为企业提供一个展示自己的舞台、为消费者创造一个了解企业的捷径。</h6>
+                            <span class="nr_sj">
+                                <a href="馆主.html"><span class="sj_zz">
+                                    <div class="sj_yuan1">
+                                        <div class="sj_yuan2">
+                                    <img src="img/guanzhu.png" alt="馆主" >
+                                    </div></div>
+                                </span></a>
+                                <span class="gxsj1"><span class="gxsj2"></span>2022年9月28日</span>
+                                <a href="图库.html"><span class="gxsj3"><span class="gxsj4"></span>图库</span></a>
+                                <span class="gxsj5"><span class="gxsj6"></span>2</span>
+                                <div class="gxsj_r"><span class="gxsj7"><span class="gxsj8"></span>6</span></div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_nr"><!--时 光 区-->
+                    <div class="nr">
+                    <div class="nr_i"><img src="img/1.jpg" alt="图片"></div>
+                        <div class="nr_right">
+                            <h4 class="nr_bt">——个人网站开发——</h4>
+                            <h6 class="nr_znr">随着全球信息网络的发展，网站早已由论证阶段进入了实质阶段,尤其为企业提供一个展示自己的舞台、为消费者创造一个了解企业的捷径。</h6>
+                            <span class="nr_sj">
+                                <a href="馆主.html"><span class="sj_zz">
+                                    <div class="sj_yuan1">
+                                        <div class="sj_yuan2">
+                                    <img src="img/guanzhu.png" alt="馆主" >
+                                    </div></div>
+                                </span></a>
+                                <span class="gxsj1"><span class="gxsj2"></span>2022年9月29日</span>
+                                <a href="视频.html"><span class="gxsj3"><span class="gxsj4"></span>视频</span></a>
+                                <span class="gxsj5"><span class="gxsj6"></span>2</span>
+                                <div class="gxsj_r"><span class="gxsj7"><span class="gxsj8"></span>7</span></div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_nr"><!--时 光 区-->
+                    <div class="nr">
+                    <div class="nr_i"><img src="img/1.jpg" alt="图片"></div>
+                        <div class="nr_right">
+                            <h4 class="nr_bt">——个人网站开发——</h4>
+                            <h6 class="nr_znr">随着全球信息网络的发展，网站早已由论证阶段进入了实质阶段,尤其为企业提供一个展示自己的舞台、为消费者创造一个了解企业的捷径。</h6>
+                            <span class="nr_sj">
+                                <a href="馆主.html"><span class="sj_zz">
+                                    <div class="sj_yuan1">
+                                        <div class="sj_yuan2">
+                                    <img src="img/guanzhu.png" alt="馆主" >
+                                    </div></div>
+                                </span></a>
+                                <span class="gxsj1"><span class="gxsj2"></span>2022年9月30日</span>
+                                <a href="风景.html"><span class="gxsj3"><span class="gxsj4"></span>风景</span></a>
+                                <span class="gxsj5"><span class="gxsj6"></span>1</span>
+                                <div class="gxsj_r"><span class="gxsj7"><span class="gxsj8"></span>3</span></div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_nr"><!--时 光 区-->
+                    <div class="nr">
+                    <div class="nr_i"><img src="img/1.jpg" alt="图片"></div>
+                        <div class="nr_right">
+                            <h4 class="nr_bt">——个人网站开发——</h4>
+                            <h6 class="nr_znr">随着全球信息网络的发展，网站早已由论证阶段进入了实质阶段,尤其为企业提供一个展示自己的舞台、为消费者创造一个了解企业的捷径。</h6>
+                            <span class="nr_sj">
+                                <a href="馆主.html"><span class="sj_zz">
+                                    <div class="sj_yuan1">
+                                        <div class="sj_yuan2">
+                                    <img src="img/guanzhu.png" alt="馆主" >
+                                    </div></div>
+                                </span></a>
+                                <span class="gxsj1"><span class="gxsj2"></span>2022年9月30日</span>
+                                <a href="特效.html"><span class="gxsj3"><span class="gxsj4"></span>特效</span></a>
+                                <span class="gxsj5"><span class="gxsj6"></span>2</span>
+                                <div class="gxsj_r"><span class="gxsj7"><span class="gxsj8"></span>5</span></div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 右样式 -->
+        <div class="content_right">
+            <div class="content_right_gz">
+                <div class="right_gz_tx">
+                    <img src="img/2.png" width="100%" height="135px" alt="图片">
+                    <!-- 圆 -->
+                    <div class="gz_tx_yuan1">
+                        <div class="gz_tx_yuan2">
+                       <img src="img/logo图标.png" >
+                    </div></div>
+                    <div class="gz_tx_mz"><h2>忘忧君馆</h2></div>
+                    <div class="gz_tx_qj"><h6>——个人网站开发——</h6></div>
+                    <!-- <div class="gz_tx_zj"></div> -->
+                </div>
+                <div class="gz_tx_zj">
+                    <div class="zj_top">
+                       <!-- 微信图标 -->
+                        <div class="zj_top_xin1">
+                                <li>
+                                    <a href="#"><img src="img/微信图标.jpg" width="100%" height="100%"></a>
+                                    <ul>
+                                        <li><a href="#"><img src="img/wx.jpg" alt="weixin"></a></li>
+                                    </ul>
+                                </li>
+                        </div>
+                            <!--qq图标  -->
+                        <div class="zj_top_xin2">
+                            <li>
+                                <a href="#"><img src="img/qq图标.jpg" width="100%" height="100%"></a>
+                                <ul>
+                                    <li><a href="#"><img src="img/qq.jpg" alt="qq"></a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <!-- 微博图标 -->
+                        <div class="zj_top_xin3">
+                            <li>
+                                <a href="#"><img src="img/微博图标.jpg" width="100%" height="100%"></a>
+                                <ul>
+                                    <li><a href="#"><img src="img/weibo.png" alt="qq"></a></li>
+                                </ul>
+                            </li>
+                        </div>
+                   </div>
+                   <!-- 总结内容 -->
+                    <div class="zj_bottom">
+                        <din class="zj_bottom_zj"><div class="z_j">文章</div>22</din>
+                        <din class="zj_bottom_zj"><div class="z_j">留言</div>0</din>
+                        <din class="zj_bottom_zj"><div class="z_j">访客</div>0</din>
+                    </div>
+                </div>
+            </div>
+            <div class="axs"></div>  
+        </div>
+        
+    </div>
+ </div> 
+ <div class="mm"></div>
+</body>
+</html>
+
+
+
+
+
+<!-- .axs{
+    width: 100%;
+    height: 500px;
+    background: violet;
+}
+.mm{
+    width: 100%;
+    height: 300px;
+    background-color: #3390ff;
+} -->

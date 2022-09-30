@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>懒加载</title>
+</head>
+<style>
+body{
+	padding:0;
+	margin:0;
+	}
+	
+
+.bigBox{
+	margin:0 auto;
+	width:960px;
+	/*height:800px;*/
+	overflow:hidden;
+	background-color:#F00;
+	}
+	.bigBox>img{
+		/*display:inline-block;*/
+		width:150px;
+		height:200px;
+		background-color:#0CF;
+		float:left;
+		margin:10px 19px;
+		}
+</style>
+
+<body>
+<div class="bigBox">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+    <img src="./img/1.jpg">
+ 
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/lazyload.js"></script>
+<!-- <img class="lazy" alt="" width="150" height="200" data-original="img/gif网站素材13.GIF" /> -->
+<script>
+	$("img").lazyload({    
+// placeholder : "img/gi.GIF" ,    
+effect : "fadeIn" ,
+threshold : -200  
+});   
+	
+    
+
+
+    
+ </script>
+</body>
+</html>

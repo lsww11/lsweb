@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    .m{
+        width:400px ;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/4.GIF);
+         background-color:rgb(0, 0, 0);
+         margin: 0 auto;
+    }
+    h4{
+        position: relative;
+        font-size: 3rem;
+        color: rgb(46, 44, 44);
+    }
+    h4::after{
+        content: "忘忧君馆";
+        color:transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip-path: circle(35px at 50% 50%);
+        animation: move 5s infinite;
+        background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Ffile03.16sucai.com%2F2016%2F10%2F1100%2F16sucai_v20161030135_32d.JPG&refer=http%3A%2F%2Ffile03.16sucai.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1664527930&t=4ee2ed7179a02c1cf680eff9151dbca1');
+         background-color: text;
+        -webkit-background-clip: text;
+    }
+    @keyframes move {
+        0%{
+            clip-path: circle(35px at 0 50%);
+        }
+        50%{
+            clip-path: circle(35px at 100% 50%)
+        }
+        100%{
+            clip-path: circle(35px at 0 50%)
+        }
+    }
+</style>
+<body><div class="m">
+    <h4>忘忧君馆</h4>
+    </div>
+</body>
+</html>

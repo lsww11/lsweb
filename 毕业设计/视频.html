@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>忘忧君馆</title>
+<link rel="icon" href="img/logo图标.png" sizes="64x64">
+<style>
+
+#main{
+	width:100%;
+	overflow:hidden;
+    
+}
+
+#main .main-left{
+	width:25%;
+	height:100px;
+	background:lightgreen;
+	float:left;
+}
+#main .main-center{
+	width:50%;
+	height:100px;
+	background:lightgreen;
+	float:left;
+}
+
+#main .main-right{
+	width:25%;
+	height:100px;
+	background:lightgreen;
+	float:right;
+    cursor: pointer;
+   
+}
+#footer{
+	height:35px;
+	background:lightgreen;
+    
+}
+    .main-center{
+        width:400px ;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/4.GIF);
+         background-color:lightgreen;
+         margin: 0 auto;
+    }
+    .title{
+        position: relative;
+        font-size: 2rem;
+        color:rgb(42,166,226);
+        /* text-shadow: 2px -3px 5px 1px #000 inherit; 文字阴影 */
+        /* box-shadow: 0px -3px 5px 1px #72bae1 inset;  盒子阴影：水平阴影 垂直阴影 模糊距离 阴影尺度 阴影颜色 inset(外部阴影)--outset(内部阴影) */
+    }
+    .title::after{
+        content: "忘忧君馆";
+        color:transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip-path: circle(25px at 50% 50%);
+        animation: move 5s infinite;
+        background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.soogif.com%2FyTmScql4HlXXOdA9CKmzYYYwzzIZrUAO.gif&refer=http%3A%2F%2Fimg.soogif.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1665139133&t=06168e4b04d48c27afdd13b3c260188c');
+         background-color: text;
+        -webkit-background-clip: text;
+    }
+    @keyframes move {
+        0%{
+            clip-path: circle(25px at 0 50%);
+        }
+        50%{
+            clip-path: circle(25px at 100% 50%)
+        }
+        100%{
+            clip-path: circle(25px at 0 50%)
+        }
+    }
+    .logo img{
+        width:60px;
+        height:60px;
+    }
+
+   
+   body{
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;}
+    .btn{
+            float: left;
+            width: 12.5%;
+            height: 35px;
+            background-color: #ade0c7;
+            text-align: center;/*文本水平对齐水平：居中 */
+            line-height: 35px;/*行高：元素高度 */
+            cursor: pointer;/*光标：指向者*/
+    
+        }
+        .btn li:hover{
+            color: #fff;
+            background-color: #3390ff;
+        }
+        a{
+    text-decoration: none;
+    color: #000;
+   }
+   .pen{top: 5px;
+	   margin: 10px 0;
+	   }
+	   .wenan{
+        
+		   width:100%;
+		   height:25%;
+		   background-color:lightgreen;
+		   text-height:10px;
+		   float:left;
+		   font-size:17px;
+		   font:bold 17px 'arial' ,'sans-serif' , 楷体;
+		   padding-left:2em;
+           border-left: 1px dashed rgb(0, 0, 0);
+  
+		   }
+		  .wenan1{
+            margin:0 auto;
+			width:100%;
+		   	height:75%;
+		   	background-color:lightgreen;
+		  	float:left;
+		   	
+			font:italic bold 7px 'arial' , 宋体;
+			padding-left:2em;
+            border-left: 1px dashed rgb(0, 0, 0);
+            
+			  }
+			  .yanse{
+				  background-color: #3390ff;
+                  color: #fff;
+              }
+                .wc{
+        width: 100%;
+        height: 1990px;
+        background: #3390ff;
+    }   
+ 
+    .guan{top: 5px;
+	   margin: 10px 5px;
+	   }
+	   .wen{
+        
+		   width:100%;
+		   height:25%;
+		   background-color:lightgreen;
+		   text-height:10px;
+		   float:right;
+		   font-size:17px;
+		   font:bold 17px 'arial' ,'sans-serif' , 楷体;
+		   padding-left:2em;
+           border-right: 1px dashed rgb(0, 0, 0);
+  
+		   }
+		  .wen1{
+            
+			width:100%;
+		   	height:75%;
+		   	background-color:lightgreen;
+		   	
+		  	float:right;
+		   
+			font:italic bold 6px 'arial' , 宋体;
+	
+            border-right: 1px dashed rgb(0, 0, 0);
+         
+            text-indent:15px; /*文本缩进*/
+			  }
+              .wen1_ge{
+                margin: 7px 0px;
+                margin-left: -11px;
+                font: bold 13px 'arial' ,'sans-serif' ,楷体;
+              }
+              .user{
+                color: rgb(3, 147, 231);
+                text-decoration: rgb(1, 141, 255) underline;
+                margin-left: 2px;
+                font: bold 13px 'arial' ,'sans-serif' ,楷体;
+                text-shadow:0.1em 0.1em rgb(0, 0, 0);
+                }			  
+</style>
+<!-- 主内容样式 -->
+<style>
+   
+</style>
+</head>
+
+<body>
+<!-- 主标 -->
+<div id="main">
+<!-- 左 -->
+	<div class="main-left">
+        <div class="wen">
+            <h5 class="guan">馆主：<a class="user" href="馆主.html">lsww11</a></h5>
+        </div>
+            <div class="wen1">
+            <h6 class="wen1_ge">个性签名:</h6>
+            <p>最慢的步伐不是跬步，而是徘徊，</p>
+            <p>最快的脚步不是冲刺，而是坚持。</p>
+           </div>
+    </div>
+<!-- 大标题 -->
+    <div class="main-center">
+        <div class="logo"><img src="img/logo图标.png" alt="logo图标"></div>
+            <h5 class="title">忘忧君馆</h5>
+    </div>
+<!-- 右 -->
+	<div class="main-right">
+        <div class="wenan"><a href="文案.html">
+            <h5 class="pen">随 笔：</h5>
+        </div>
+            <div class="wenan1">
+            <p>没有一个冬天不可逾越，没有一个春天不会来临。</p>
+            <p>最慢的步伐不是跬步，而是徘徊，</p>
+            <p>最快的脚步不是冲刺，而是坚持。</p>
+           </div></a>
+    </div>
+<!-- 导航 -->
+    <div id="footer">
+        <ul class="m">
+            <div class="btn"><a href="首页.html"><li>首 页</li></a></div>
+            <div class="btn"><a href="时光.html"><li>时 光</li></a></div>
+            <div class="btn"><a href="博客.html"><li>博 客</li></a></div>
+            <div class="btn"><a href="文案.html"><li>文 案</li></a></div>
+            <div class="btn"><a href="图库.html"><li>图 库</li></a></div>
+            <div class="btn"><a href="视频.html"><li class="yanse">视 频</li></a></div>
+            <div class="btn"><a href="风景.html"><li>风 景</li></a></div>          
+            <div class="btn"><a href="特效.html"><li>特 效</li></a></div>
+        </ul>
+    </div>
+ </div>   
+<!-- 主标结束 -->
+<!-- 主内容 -->
+    <div class="wc">
+        
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<video width="320" height="240" controls autoplay>
+  <source src="movie.ogg" type="video/ogg">
+  <source src="img/仙剑3html.mp4" type="video/mp4">
+  <source src="movie.webm" type="video/webm">
+  <object data="img/仙剑3html.mp4" width="320" height="240">
+    <embed width="320" height="240" src="movie.swf">
+  </object>
+</video>
+
+</body>
+</html>
+
+
+
+
+<!doctype html>
+<html>
+  <head>
+    <title name="视频播放"></title>
+  </head>
+  <body>
+    <video width="320" height="200" controls>
+      <source src="movie.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+    </video>
+  </body>
+  
+  
+  
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><style>
+ 
+</style>
+<style>
+    html{
+        /*scroll-behavior: smooth;滚动条-行为：平滑 css3新增属性兼容性*/
+    }
+    body{
+        margin: 0;
+        background-color: rgb(203, 99, 55);
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+    .container{
+        width: 700px;
+        height: auto;/*自适应高度*/
+        background-color: aqua;/*背景颜色*/
+        margin: 0 auto;/*外边距：0-->上下元素边框对外的距离 */
+    }
+    .item{
+        width: 700px;
+        height: 200px;
+        border-bottom:10px solid #fff ;/*边框-下边框：粗细 样式 颜色*/
+    }
+    .nav{
+        position: fixed;/*固定定位*/
+        top: 50px;/*固定定位元素顶边框与浏览器顶边框之间距离*/
+        right:50px;/*与右边框距离*/
+        width:50px;
+        height: 400px;
+        background-color: #ade0c7;
+    }
+   .nav li{
+    width: 50px;
+    height: 30px;
+    text-align:center ;/*文本水平对齐水平：居中*/
+    line-height: 30px;/*行高：元素高度*/
+    font-size: 14px;/*文字大小 谷歌浏览器默认文字是16px*/
+    cursor: pointer; /*光标：指向者*/
+   }
+   .nav li:hover{
+    color: #fff;
+    background-color: #00a1d6;
+   }
+
+   a{
+    text-decoration: none;
+   }
+   a:visited {
+    color: rgb(0, 0, 0);}
+</style>
+<body>
+    
+    <div class="container">
+    <div class="item">首页</div>
+    <div class="item">影视区</div>
+    <div class="item">番剧区</div>
+    <div class="item">音乐区</div>
+    <div class="item">鬼畜区</div>
+    <div class="item">科技区</div>
+    <div class="item">动漫区</div>
+    <div class="item">游戏区</div>
+    <div class="item" id="guanggao">广告区</div>
+    <div class="item">舞蹈区</div>
+    <div class="item">时尚区</div>
+    <div class="item">T V区</div>
+    <div class="item">直播区</div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li>首页</li>
+            <li>影视</li>
+            <li>番剧</li>
+            <li>音乐</li>
+            <li>鬼畜</li>
+            <li>科技</li>
+            <li>动漫</li>
+            <li>游戏</li>
+            <li><a href="#guanggao" rel="">广告</a></li>
+            <li>舞蹈</li>
+            <li>时尚</li>
+            <li>T V</li>
+            <li>直播</li>
+        </ul>
+
+    </div>
+
+    
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+    /*
+        $('li') >
+    
+    
+    */
+    $('li').click(function(){
+        var index = $(this).index();
+        var h = $('.item').eq(index).offset().top;
+        $('html,body').animate({
+            scrollTop:h +'px'
+        })
+    })
+</script>
+</html>
